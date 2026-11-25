@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commute Claims</title>
+  <meta name="description" content="Android app that turns NMBS/SNCB train ticket e-mails into a weekly commuting expense claim.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Commute Claims</h1>
+    <p class="muted">A small Android app for claiming train commuting costs.</p>
+  </header>
+
+  <p>
+    Commute Claims finds the NMBS/SNCB train ticket confirmations in the user's own Gmail account,
+    groups the trips for a configured route by week, and lets the user remove trips that were not
+    work-related. With one tap it e-mails a weekly expense claim (summary PDF plus the original
+    NMBS receipts) to the user's employer, sent from the user's own Gmail account.
+  </p>
+
+  <h2>How it uses Google data</h2>
+  <ul>
+    <li><strong>Read Gmail</strong> (<code>gmail.readonly</code>) — only to search for and read e-mails sent by NMBS/SNCB.</li>
+    <li><strong>Send Gmail</strong> (<code>gmail.send</code>) — only to send the weekly claim when the user taps “Send”.</li>
+  </ul>
+  <p>
+    Everything runs on the user's phone. There is no server, no account with us, no analytics and no advertising.
+    See the <a href="privacy.html">privacy policy</a> for details.
+  </p>
+
+  <footer class="muted">
+    Commute Claims is a personal tool published under the Boop Games GitHub organisation.
+    It is not affiliated with NMBS/SNCB.
+    · <a href="privacy.html">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>
